@@ -1,0 +1,55 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/name"
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/countryCode",
+          "options": {
+            "customClassName": "country-code"
+          }
+        },
+        {
+          "type": "Control",
+          "label": "Mobile Number",
+          "scope": "#/properties/mobile",
+          "options": {
+            "customClassName": "mobile-number"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Control",
+      "label": "Email",
+      "scope": "#/properties/email"
+    },
+    {
+      "type": "Control",
+      "label": "Password",
+      "scope": "#/properties/password",
+      "options": {
+        "format": "password"
+      }
+    },
+    {
+      "type": "Control",
+      "label": "Gender",
+      "scope": "#/properties/gender",
+      "options": {
+        "format": "radio"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/birthDate"
+    }
+    
+  ]
+}

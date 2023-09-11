@@ -1,0 +1,53 @@
+{
+    "customErrorMessages": true,
+    "type": "object",
+    "required": [
+        "name",
+        "email"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Please enter your name"
+        },
+        "countryCode": {
+            "type": "string",
+            "enum": [
+                "+1",
+                "+91",
+                "+44",
+                "+43",
+                "+7"
+            ]
+        },
+        "mobile": {
+            "type": "string",
+            "title": "Mobile",
+            "pattern": "^\\d{10}$"
+        },
+        "email": {
+            "type": "string",
+            "title": "Email",
+            "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+            "description": "Enter valid email id"
+        },
+        "password": {
+            "type": "string",
+            "title": "Password",
+            "minLength": 8
+        },
+        "gender": {
+            "type": "string",
+            "enum": [
+                "Male",
+                "Female",
+                "Other"
+            ]
+        },
+        "birthDate": {
+            "type": "string",
+            "format": "date"
+        }
+    }
+}

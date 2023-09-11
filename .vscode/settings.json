@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+} 
